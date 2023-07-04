@@ -1,22 +1,22 @@
-/* Simple Inheritance */
-class student //super
+/*simple inheritance*/
+class student  //super
 {
-    private int roll,marks;
+    int roll,marks;
     String name;
-     void input()
+    void input()
     {
         System.out.println("Enter roll name & marks: ");
     }
 }
-class abhi extends student //sub-class
+class abhi extends student  //sub-class
 {
     void disp()
-{
-    roll=1; name="abhi"; marks=92;
-    System.out.println(roll+" "+name+" "+marks);
-}
-public static void main(String[] args) {
-    abhi r=new abhi();
-    r.input(); r.disp();
-}
+    {
+        roll=1; name="abhi"; marks=89;
+        System.out.println(roll+" "+name+" "+marks);
+    }
+    public static void main(String[] args) {
+        abhi r=new abhi();
+        r.input(); r.disp();
+    }
 }
